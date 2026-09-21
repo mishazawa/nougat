@@ -1,0 +1,17 @@
+GET https://mastodon.social/.well-known/webfinger?resource=acct:nougat69@mastodon.social
+Accept: application/activity+json
+
+###
+
+GET https://mas.to/users/themilkman
+Accept: application/activity+json
+
+###
+
+GET https://bc98-193-34-172-210.ngrok-free.app/.well-known/webfinger?resource=acct:nougat@bc98-193-34-172-210.ngrok-free.app
+Accept: application/activity+json
+
+###
+
+GET https://bc98-193-34-172-210.ngrok-free.app/nougat
+Accept: application/activity+json

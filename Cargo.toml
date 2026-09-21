@@ -3,5 +3,23 @@ name = "nougat"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[[bin]]
+name = "post-mastodon"
+path = "src/scripts/post.rs"
+
 [dependencies]
 activitypub_federation = "0.6.5"
+anyhow = "1.0.104"
+async-trait = "0.1.92"
+axum = { version = "0.7.9", features = ["macros"] }
+chrono = "0.4.45"
+env_logger = "0.11.11"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tokio = "1.53.1"
+tracing = "0.1.44"
+url = "2.5.8"

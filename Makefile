@@ -1,7 +1,13 @@
-.PHONY: test-mastodon run
-
-test-mastodon:
-	curl -H 'Accept: application/activity+json' https://mastodon.social/@LemmyDev/109790106847504642 | jq
+.PHONY: run ngrok lab post-mastodon
 
 run:
-	uv run nougat
+	cargo run --bin server
+
+post-mastodon:
+	cargo run --bin post-mastodon
+
+ngrok:
+	ngrok http 5000
+
+lab:
+	uv run jupyter lab --notebook-dir=.
